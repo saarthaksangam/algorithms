@@ -1,7 +1,7 @@
 """
 Problem: LRU Cache
 Problem Statement: https://www.algoexpert.io/questions/LRU%20Cache
-NTID: NT_101
+NTID: NT-101
 Category: Linked Lists
 Difficulty: Extreme
 Sprint: 2205.01
