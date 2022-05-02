@@ -17,7 +17,6 @@ class LRUCache:
         self.currentSize = 0
         self.listofMostRecent = DoublyLinkedList()
 
-        
     def insertKeyValuePair(self, key: int, value: int) -> None:
         if key not in self.cache:
             if self.currentSize == self.maxSize:
@@ -30,33 +29,28 @@ class LRUCache:
 
         self.updateMostRecent(self.cache[key])
 
-        
     def getValueFromKey(self, key: int) -> int:
         if key not in self.cache:
             return None
         self.updateMostRecent(self.cache[key])
         return self.cache[key].value
 
-    
     def getMostRecentKey(self) -> int:
-       if self.listofMostRecent.head is None:
+        if self.listofMostRecent.head is None:
             return None
         return self.listofMostRecent.head.key
 
-    
     def replaceKeyValuePair(self, key: int, value: int) -> None:
         if key not in self.cache:
             raise Exception("Key not found in cache!")  # sanity check
         else:
             self.cache[key].value = value
 
-            
     def removeLeastRecentKey(self) -> None:
-       keyToRemove = self.listofMostRecent.tail.key
+        keyToRemove = self.listofMostRecent.tail.key
         self.listofMostRecent.removeTail()
         del self.cache[keyToRemove]
 
-  
     def updateMostRecent(self, node) -> None:
         self.listofMostRecent.setHeadTo(node)
 
@@ -66,7 +60,6 @@ class DoublyLinkedList:
         self.head = None
         self.tail = None
 
-        
     def setHeadTo(self, node):
         if self.head == node:
             return
@@ -87,8 +80,7 @@ class DoublyLinkedList:
             node.next = self.head
             self.head = node
 
-            
-    def removeTail(self):      
+    def removeTail(self):
         if self.tail is None:
             return
         if self.head == self.tail:
@@ -106,7 +98,7 @@ class DoublyLinkedListNode:
         self.prev = None
         self.next = None
 
-    def removeBindings(self):       
+    def removeBindings(self):
         if self.prev is not None:
             self.prev.next = self.next
         if self.next is not None:
