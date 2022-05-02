@@ -1,3 +1,15 @@
+"""
+Problem: Sum of Linked Lists
+Problem Statement: https://www.algoexpert.io/questions/Sum%20of%20Linked%20Lists
+NTID: NT-107
+Category: Linked Lists
+Difficulty: Medium
+Sprint: 2205.01
+Engineer: Saarthak Sangamnerkar
+Date: 05/02/2022
+"""
+
+
 # This is an input class. Do not edit.
 class LinkedList:
     def __init__(self, value):

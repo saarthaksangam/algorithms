@@ -15,7 +15,6 @@ def findClosestValueInBst(tree, target):
     The findClosestValueInBst function finds the closest value to a target value in a BST.
        The function takes in two parameters: tree and target, both of which are integers.
        The function returns an integer.
-
     :param tree: Keep track of the tree that is being searched
     :param target: Store the value of the node that is being searched for
     :return: The closest value to the target
@@ -29,7 +28,6 @@ def findClosestValueInBst(tree, target):
 '''
 Average Time Complexity: O(log(n))
 Average Space Complexity: O(1)
-
 Worst Time Complexity: O(n)
 Worst Space Complexity: O(n)
 '''
@@ -39,7 +37,6 @@ def findClosestValueInBSTHelperRecursive(tree, target, closest):
     """
     The findClosestValueInBSTHelperRecursive function takes in a BST and a target value. It then traverses the tree
     recursively and returns the closest value to that target
-
     :param tree: Keep track of the current node
     :param target: Store the value of the node that is being searched for
     :param closest: Keep track of the closest value so far
@@ -62,7 +59,6 @@ def findClosestValueInBSTHelperRecursive(tree, target, closest):
 '''
 Average Time Complexity: O(log(n))
 Average Space Complexity: O(1)
-
 Worst Time Complexity: O(n)
 Worst Space Complexity: O(1)
 '''
@@ -73,7 +69,6 @@ def findClosestValueInBSTHelperIterative(tree, target, closest=float('inf')):
     The findClosestValueInBSTHelperIterative function takes in a BST and a target value,
     and returns the closest value to that target value contained in the BST. The function
     uses an iterative approach to find this closest value.
-
     :param tree: Keep track of the current node
     :param target: Store the value of the node that is being searched for
     :param closest=float('inf'): Keep track of the closest value so far
