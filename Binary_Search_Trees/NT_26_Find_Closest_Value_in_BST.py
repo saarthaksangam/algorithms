@@ -17,7 +17,7 @@ def findClosestValueInBst(tree, target):
 # Recursive Solution
 '''
 Average Time | Space Complexity: O(log(n)) | O(1)
-Worst Time |Space Complexity: O(n) | O(n)
+Worst Time | Space Complexity: O(n) | O(n)
 '''
 
 def findClosestValueInBSTHelperRecursive(tree, target, closest):
@@ -36,7 +36,7 @@ def findClosestValueInBSTHelperRecursive(tree, target, closest):
 # Iterative Solution
 '''
 Average Time | Space Complexity: O(log(n)) | O(1)
-Worst Time |Space Complexity: O(n) | O(1)
+Worst Time | Space Complexity: O(n) | O(1)
 '''
 
 def findClosestValueInBSTHelperIterative(tree, target, closest=float('inf')):
