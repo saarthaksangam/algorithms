@@ -48,4 +48,4 @@ def numberOfBinaryTreeTopologies(n):
             rightTreeSize = m - leftTreeSize - 1  # m - 1 because we always have a root
             numberOfTreeTopologies += cache[leftTreeSize] * cache[rightTreeSize]
         cache.append(numberOfTreeTopologies)
-    return cache[n]
+    return cache[-1]
