@@ -24,7 +24,7 @@ def numberOfBinaryTreeTopologies(n):
     return numberOfTreeTopologies
 
 
-# Optimized Recursive Solution -> O9n^2) time | O(n) space
+# Optimized Recursive Solution -> O(n^2) time | O(n) space
 def numberOfBinaryTreeTopologies(n, cache={0: 1}):
     # Write your code here.
     if n in cache:
