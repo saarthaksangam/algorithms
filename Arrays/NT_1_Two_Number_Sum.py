@@ -42,7 +42,7 @@ def twoNumberSum(array, targetSum):
     return []
 
 
-# More optimized solution -> O(n) time | O(1) space
+# More optimized solution -> O(nlogn) time | O(1) space
 def twoNumberSum(array, targetSum):
     array = sorted(array)
     left = 0
