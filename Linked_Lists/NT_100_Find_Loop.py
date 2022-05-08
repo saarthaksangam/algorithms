@@ -10,6 +10,12 @@ Date: 05/08/2022
 """
 
 
+class LinkedList:
+	def __init__(self, value):
+		self.value = value
+		self.next = None
+        
+
 # O(n) time | O(1) space
 def findLoop(head):
     """
