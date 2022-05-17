@@ -1,1 +1,0 @@
-def RELEASE_VERSION = '2206'
